@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Reservations</title>
+    </head>
+    <body>
+        <h2>Current signups, you should only be able to see this, if you have created event!</h2>
+
+        <ol>
+            <li th:each="signup : ${signups}">
+                <span th:text="${signup.name}">name</span>
+                <span th:utext="${signup.address}">address</span>
+            </li>
+        </ol>
+
+    </body>
+</html>
