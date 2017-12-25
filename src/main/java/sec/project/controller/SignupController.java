@@ -34,6 +34,8 @@ public class SignupController {
         signup1.setName("Ted");
         signup1.setPassword("godKing");
         signup1.setAddress("Kumpula");
+        signupRepository.save(signup);
+        signupRepository.save(signup1);
     }
     @RequestMapping("*")
     public String defaultMapping() {
